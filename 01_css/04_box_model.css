@@ -1,0 +1,59 @@
+div {
+  color: white;
+  width: 100px;
+  height: 100px;
+  background-color: gray
+}
+
+.margin {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.padding {
+  padding-top: 30px; /* 내부여백 */ 
+  padding-bottom: 30px;
+}
+
+.border {
+  border-width: 2px;
+  border-style: dotted;
+  border-color: red;
+  border-top-color: blue;
+  border-radius: 10px; /* 모서리가 둥글게 됨 */
+}
+
+.margin-shorthand-1 {
+  /* 상하좌우 */
+  margin: 10px;
+}
+
+
+.margin-shorthand-2 {
+  /* 상하 & 좌우 */
+  margin: 10px 20px;
+}
+
+
+.margin-shorthand-3 {
+  /* 상 & 좌우 & 하 ==> 콤마X 띄어쓰기로 구분한다.  */
+  margin: 10px 20px 30px;
+}
+
+.margin-shorthand-4 {
+  /* 상 & 우 & 하 & 좌 (시계방향 순서)   */
+  margin: 10px 20px 30px 40px;
+}
+
+.align-center {
+  /* 0은 상하, auto는 좌우 : 오른족 왼쪽 반반 나눠준다. margin을 ==> 가운데 정렬된다.  */
+  margin: 0 auto;
+
+}
+
+.align-right {
+  /* 왼쪽에 남은 너비를 붙인다.  */
+  margin-left: auto;
+}

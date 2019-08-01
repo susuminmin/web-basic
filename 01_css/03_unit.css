@@ -1,0 +1,38 @@
+body {
+  -webkit-text-size-adjust: auto;
+}
+
+h1 {
+  /* font-size: 2em; => h1의 기본 폰트 사이즈*/
+  color: darkgoldenrod;
+  /* 디폴트(16px)의 50% 적용 ==> 8px 적용 */
+  font-size: 50%;
+}
+
+
+section {
+  /* 디폴트(16px)의 50% 적용 ==> 8px 적용 */
+  font-size: 50%
+}
+
+
+/* h2 의 부모가 section */
+section > h2 {
+  color: skyblue;
+  /* 상속의 영향 (section은 8px) =>  */
+  font-size: 5em; 
+}
+
+
+ul {
+  /* 루트 : DOM-Tree 최상단에 있는 default 사이즈의 영향 받는다. */
+  /* 루트 (16px) 의 2배 : 32px (상속의 영향X) */
+  font-size: 2rem
+}
+
+
+#box {
+  width: 50vw; /* 보이는 dp의 반만큼만 보인다 */
+  height: 100px;
+  background-color: blueviolet
+}
