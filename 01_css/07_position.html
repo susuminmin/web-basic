@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="07_position.css">
+</head>
+
+
+<body>
+
+  <div class="ground">
+    <div class="parent">
+      <div class="parent">
+        <div class="absolute box">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="fixed box">
+    fixed
+  </div>
+
+  <h1>1. Static</h1>
+  <div class="box">static</div>
+  <div class="box">static</div>
+
+  <!-- relative -->
+  <h2>2. Relative</h2>
+  <!-- parent는 현재 static임. 아무것도 정의되지 않음 -->
+  <div class="parent">
+    <!-- absolute는 자기 위에 있는 누군가를 찾는데, 일단 static인 parent에 들어오게 된다.  -->
+    <div class="absolute box">
+      absolute
+    </div>
+  </div>
+
+  <!-- class는 여러개 먹일 수 있다. css에 만든 relative 와 box 참조 -->
+  <!-- relative는 자기자신이 기준. -->
+  <div class="relative box">
+    relative
+  </div>
+
+
+  <h1>3. Float</h1>
+  <!-- 신문 웹사이트에서 글씨 쓰고 나머지에 사진 넣을 때 사용 -->
+  <div>
+    <img src="http://lorempixel.com/400/200/sports/" alt="">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+    sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  </div>
+
+</body>
+
+
+</html>

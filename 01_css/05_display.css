@@ -1,0 +1,22 @@
+li {
+  display: inline; /* 기본값이 block 이라 inline 으로 */
+  /* width: 100px;
+  height: 100px; */
+  margin: 20px;
+  padding: 20px;
+}
+
+/* inline은 좌우 마진만 ==> margin-top, margin-bottom을 못 준다. */
+/* c.f. padding은 상하좌우 가능 */
+
+/* 요소 검사하면 있는데... 아예 표시 안 됨 */
+#bye {
+  display: none;
+}
+
+/* 똑같이 사라지지만 자기 공간 유지 */
+/* 기본값은 visible, 인위적으로 없앨 수 있다. */
+#hollow {
+  visibility: hidden;
+}
+

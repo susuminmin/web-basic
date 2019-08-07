@@ -1,0 +1,61 @@
+body {
+  margin: 0;
+}
+
+.box {
+  width: 50px;
+  height: 50px;
+  border: solid;
+  background-color: darksalmon;
+}
+
+/* c.f. postiion에 4가지 옵션 있음
+static absolute relative fixed */
+
+
+/* relative클래스 정의 */
+.relative {
+  position: relative;
+  /* 원래 있던 위치에서 지정한 만큼 상대적으로 움직인다. */
+  top: 50px;
+  left: 50px;
+  background-color: aquamarine
+}
+
+/* absolute는 항상 가장 끝단에 있는 어떤 위치를 기준으로 */
+/* 아무것도 선언되지 않은 최상단으로 */
+
+.absolute {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  background-color: burlywood;
+}
+
+.parent {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  top: 100px;
+  left: 100px;
+  background-color: cyan;
+}
+
+.ground {
+  width: 500px;
+  height: 500px;
+  border: solid;
+}
+
+.fixed {
+  position: fixed;
+  /* 화면의 가장 오른쪽에 배치 */
+  /* 스크롤을 해도 붙어있음 */
+  bottom: 0;
+  right: 0;
+}
+
+img {
+  float: right;
+  /* float => 빈공간은 텍스트가 차지, 나머지에 사진 */
+}
