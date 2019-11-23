@@ -1,50 +1,50 @@
 <!DOCTYPE html>
 <!-- 세살버릇 여든간다 3 -->
 <html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Form</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Form</title>
-</head>
+  <body>
+    <!-- action 은 form 을 어디로 제출할지 정함...  -->
+    <a href="#"></a>
 
-<body>
-  <!-- action 은 form 을 어디로 제출할지 정함...  -->
-  <a href="#"></a>
-  
-  <form action="#">
-    <!-- # 은 아무 곳에도 보내지 않겠다는 뜻 -->
-    TEXT: <input type="text" value="이것은 값이다" placeholder="내용을 입력해주세요!!" name="my-text" /><br />
-    <!-- 사용자가 텍스트 입력하는 input 창 -->
-    NUMBER: <input type="number" disabled><br /> <!-- NUMBER 안 쓰겠다. NUMBER 창에 무언가를 할 수 없음 -->
-    PASSWORD: <input type="password"><br />
-    E-MAIL: <input type="email"><br /> <!-- 이메일 형식 확인해줌. 골뱅이 포함하라고 나옴 -->
-    DATE: <input type="date" value="2019-08-01" name="birth-day"><br />
+    <form action="#"> <!-- # 은 아무 곳에도 보내지 않겠다는 뜻 -->
+      <!-- 사용자가 텍스트 입력하는 input 창 -->
+      TEXT: <input type="text" value="이것은 값이다" placeholder="내용을 입력해주세요!!" name="my-text"/><br />
+      <!-- NUMBER 안 쓰겠다. NUMBER 창에 무언가를 할 수 없음 -->
+      NUMBER: <input type="number" disabled /><br />
+      PASSWORD: <input type="password" /><br />
+      <!-- 이메일 형식 확인해줌. 골뱅이 포함하라고 나옴 -->
+      E-MAIL: <input type="email" /><br />
+      DATE: <input type="date" value="2019-08-01" name="birth-day" /><br />
 
-    <input type="radio" name="language" value="1" />HTML<br />
-    <input type="radio" name="language" value="2" checked />CSS<br />
-    <input type="radio" name="language" value="3" />JS<br /> <!-- 세 개 중에서 하나만 선택할 수 있는 옵션창 -->
-    <hr />
+      <input type="radio" name="language" value="1" />HTML<br />
+      <input type="radio" name="language" value="2" checked />CSS<br />
+      <input type="radio" name="language" value="3" />JS<br />
+      <hr />
+      
+      <!-- 세 개 중에서 하나만 선택할 수 있는 옵션창 -->
+      <select name="country">
+        <!-- 선택 옵션을 제공해주어야 함-->
+        <option value="1">한국</option>
+        <!-- selected : 새로고침시 중국이 자동으로 나옴 -->
+        <option value="2" selected>중국</option>
+        <!-- disabled : 선택할 수 없게 됨 --> 
+        <option value="3" disabled>일본</option>
+      </select>
+      <br />
 
-    <select name="country">
-      <!-- 선택 옵션을 제공해주어야 함-->
-      <option value="1">한국</option>
-      <option value="2" selected>중국</option> <!-- selected : 새로고침시 중국이 자동으로 나옴 -->
-      <option value="3" disabled>일본</option> <!-- disabled : 선택할 수 없게 됨 -->
-    </select><br />
+      <input type="checkbox" name="option" value="1" />
+      <input type="checkbox" name="option" value="2" /><br />
+      <!-- checkbox 는 여러개 선택이 가능함 옵션으로 한 개 이상 넘어올 수 있음 -->
 
-    <input type="checkbox" name="option" value="1">
-    <input type="checkbox" name="option" value="2"><br /> <!-- checkbox 는 여러개 선택이 가능함 옵션으로 한 개 이상 넘어올 수 있음 -->
-
-    <input type="color" value='#FF6600'><br />
-    <input type="submit" value="๑ŐεŐ๑ 제출 ๑ŐεŐ๑ " />
-    <!--action 비워두면 자기자신이 원래 있는 곳으로 보냄 action 준 곳으로 감 -->
-
-  </form>
-
-  
-
-</body>
-
+      <input type="color" value="#FF6600" /><br />
+      <input type="submit" value="๑ŐεŐ๑ 제출 ๑ŐεŐ๑ " />
+      <!--action 비워두면 자기자신이 원래 있는 곳으로 보냄 action 준 곳으로 감 -->
+    </form>
+  </body>
 </html>
